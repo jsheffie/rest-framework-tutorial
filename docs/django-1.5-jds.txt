@@ -1,0 +1,25 @@
+django==1.5
+# django-cms
+djangorestframework
+pygments
+
+git+git://github.com/django-debug-toolbar/django-debug-toolbar.git#egg=django-debug-toolbar
+git+git://github.com/playfire/django-debug-toolbar-user-panel.git#egg=django-debug-debug-toolbar-user-panel
+git+git://github.com/django-extensions/django-extensions.git#egg=django_extensions
+
+Ipython
+MySQL-Python
+#MySQL-Python==1.2.4b5
+
+# Default cms deps for reference
+# - django-classy-tags 
+# - south 
+# - html5lib 
+# - django-mptt 
+# - django-sekizai
+
+# http://www.djangopackages.com/grids/g/django-cms/
+# cms plugins to add...
+# django-cms-themes
+# django-blog-zinnia -> cmsplugin-zinnia
+
