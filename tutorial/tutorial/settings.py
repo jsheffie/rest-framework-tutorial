@@ -131,14 +131,14 @@ INSTALLED_APPS = (
 
 REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': (
-        'rest_framework.renderers.XMLRenderer',
-        'rest_framework.renderers.YAMLRenderer',
         'rest_framework.renderers.JSONRenderer',
         'rest_framework.renderers.BrowsableAPIRenderer',
+#        'rest_framework.renderers.XMLRenderer',
+#        'rest_framework.renderers.YAMLRenderer',
     ),
     'DEFAULT_PARSER_CLASSES': (
-        'rest_framework.parsers.XMLParser',        
-        'rest_framework.parsers.YAMLParser',        
+#        'rest_framework.parsers.XMLParser',        
+#        'rest_framework.parsers.YAMLParser',        
         'rest_framework.parsers.JSONParser',
         'rest_framework.parsers.FormParser',
         'rest_framework.parsers.MultiPartParser'
