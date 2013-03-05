@@ -3,6 +3,11 @@ django==1.5
 djangorestframework
 pygments
 
+Markdown
+PyYAML
+defusedxml
+django-filter
+
 git+git://github.com/django-debug-toolbar/django-debug-toolbar.git#egg=django-debug-toolbar
 git+git://github.com/playfire/django-debug-toolbar-user-panel.git#egg=django-debug-debug-toolbar-user-panel
 git+git://github.com/django-extensions/django-extensions.git#egg=django_extensions
