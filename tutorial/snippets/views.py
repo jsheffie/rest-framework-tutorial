@@ -10,12 +10,6 @@ class SnippetList(mixins.ListModelMixin,
     """ List all code snippets, or create a new snippet."""
     model = Snippet
     serializer_class = SnippetSerializer
-    
-    def get(self, request, *args, **kwargs ):
-        return self.list(request, *args, **kwargs)
-
-    def post(self, request, *args, **kwargs):    
-        return self.create(request, *args, **kwargs )
         
 class SnippetDetail(mixins.RetrieveModelMixin, 
                     mixins.UpdateModelMixin, 
@@ -24,15 +18,6 @@ class SnippetDetail(mixins.RetrieveModelMixin,
     """ Retrieve, update or delete a code snippet."""
     model = Snippet
     serializer_class = SnippetSerializer
-    
-    def get(self, request, *args, **kwargs):
-        return self.retrieve(request, *args, **kwargs)
-    
-    def put(self, request, *args, **kwargs):
-        return self.update(request, *args, **kwargs)
-        
-    def delete(self, request, *args, **kwargs ):
-        return self.destroy(request, *args, **kwargs)
     
 # Note: Edge cases we are not dealing with yet
 #       - malformed json, 
